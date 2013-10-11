@@ -11,7 +11,7 @@ before_install:
     - sudo sed -i -e 's/^Defaults\tsecure_path.*$//' /etc/sudoers
     - env | grep PATH
     - sudo env | grep PATH
-    - mkdir -p /usr/local/cozy/apps
+    - sudo mkdir -p /usr/local/cozy/apps
 
-script: "sudo PATH=$PATH npm test"
+script: "sudo npm test"
 
