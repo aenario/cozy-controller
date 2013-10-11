@@ -7,6 +7,7 @@ env:
         - NODE_ENV=test
 
 before_install:
+    - env | grep PATH
     - sudo env | grep PATH
 
 script: "sudo PATH=$PATH npm test"
