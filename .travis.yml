@@ -1,5 +1,13 @@
 language: node_js
 node_js:
     - "0.8"
-script: "sudo $(which npm) test"
+    - "0.10"
+env:
+    global:
+        - NODE_ENV=test
+
+before_install:
+    - sudo env | grep PATH
+
+script: "sudo PATH=$PATH npm test"
 
