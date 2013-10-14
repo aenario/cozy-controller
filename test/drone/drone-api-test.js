@@ -387,7 +387,7 @@ vows.describe('haibu/drone/api').addBatch(
         },
         "should respond with 200": function (error, response, body) {
           var result = JSON.parse(body);
-          assert.equal(result.error.message, "Log this : ");
+          assert.equal(result.error, "Log::");
           assert.equal(response.statusCode, 200);
         },
       }
