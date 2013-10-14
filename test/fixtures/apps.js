@@ -46,15 +46,15 @@ exports.apps = [
   },
   {
      "resource": "App",
-     "name": "todos",
-     "user": "todos",
+     "name": "notes",
+     "user": "notes",
      "subdomain":"test",
      "state": "stopped",
      "maxDrones": 1,
      "drones": [],
      "repository": {
        "type": "git",
-       "url": "https://github.com/mycozycloud/cozy-todos.git",
+       "url": "https://github.com/mycozycloud/cozy-notes.git",
        "branch": "master"
      },
      "scripts": {
